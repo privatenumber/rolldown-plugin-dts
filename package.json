@@ -30,11 +30,26 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./filename": "./dist/filename.js",
-    "./tsc": "./dist/tsc.js",
-    "./tsc-context": "./dist/tsc-context.js",
-    "./tsc-worker": "./dist/tsc-worker.js",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./filename": {
+      "types": "./dist/filename.d.ts",
+      "default": "./dist/filename.js"
+    },
+    "./tsc": {
+      "types": "./dist/tsc.d.ts",
+      "default": "./dist/tsc.js"
+    },
+    "./tsc-context": {
+      "types": "./dist/tsc-context.d.ts",
+      "default": "./dist/tsc-context.js"
+    },
+    "./tsc-worker": {
+      "types": "./dist/tsc-worker.d.ts",
+      "default": "./dist/tsc-worker.js"
+    },
     "./package.json": "./package.json"
   },
   "publishConfig": {
